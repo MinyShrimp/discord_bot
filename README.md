@@ -1,1 +1,1 @@
-master README.md
+conflict_2 README.md
