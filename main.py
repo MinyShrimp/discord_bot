@@ -3,7 +3,7 @@
 import discord
 from discord.ext import commands
 
-from __config__  import FILE_NAMES, __TOKEN__, SAVE_FILE_PATH
+from __config__  import *
 from __message__ import __MESSAGES__
 
 files = [ discord.File(SAVE_FILE_PATH + file) for file in FILE_NAMES ]
@@ -41,7 +41,7 @@ async def getSave(ctx):
 
 @bot.event
 async def on_member_join(member):
-    await member.guild.get_channel(855097709202636852).send(member.mention + __MESSAGES__["__INIT__"])
+    await member.guild.get_channel(__CHANNEL_TOKEN__).send(member.mention + __MESSAGES__["__INIT__"])
 
 bot.run(__TOKEN__)
 
