@@ -1,1 +1,1 @@
-conflict_1 README file
+Satisfactory Dedicated Server Discord Bot
